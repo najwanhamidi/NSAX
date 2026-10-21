@@ -1407,7 +1407,7 @@ Keep it under ~350 words.` + (notes ? `\n\nMy own notes about the session: ${not
         <div class="race-form">
           <div class="field"><label for="rf-dist">Distance</label><select id="rf-dist">${raceOpts}</select></div>
           <div class="field" id="rf-custom-wrap" hidden><label for="rf-custom">Custom km</label><input id="rf-custom" type="number" step="0.01" inputmode="decimal" placeholder="e.g. 12"></div>
-          <div class="field"><label for="rf-time">Time</label><input id="rf-time" type="text" inputmode="numeric" placeholder="20:00 or 1:35:30" autocomplete="off"></div>
+          <div class="field"><label for="rf-time">Time</label><input id="rf-time" type="text" inputmode="text" enterkeyhint="done" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="20:00 or 1:35:30" autocomplete="off"></div>
           <div class="field"><label for="rf-date">Date</label><input id="rf-date" type="date" value="${todayStr()}"></div>
           <div class="field"><label for="rf-name">Note <span class="opt">(optional)</span></label><input id="rf-name" type="text" placeholder="e.g. parkrun, flat course"></div>
           <button class="btn primary" data-act="add-race">Add result</button>
